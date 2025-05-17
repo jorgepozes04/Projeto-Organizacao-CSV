@@ -33,8 +33,8 @@ public class ArrayConsumidores implements ColecaoDeConsumidores {
     }
 
     public boolean trocarPosicao(int posicao1, int posicao2) {
-        // verifica se as posições existem
-        if (validarPosicao(posicao1) && validarPosicao(posicao2)) {
+
+        if (validarPosicao(posicao1) && validarPosicao(posicao2)) { // Verificar se as posições existem
             Consumidor auxiliar = consumidores.get(posicao1);
             consumidores.set(posicao1, consumidores.get(posicao2));
             consumidores.set(posicao2, auxiliar);
